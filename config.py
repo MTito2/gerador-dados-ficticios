@@ -60,3 +60,11 @@ def data_desligamento(data_inicio):
     campo_final = random.choices(campo, weights=peso, k=1)
 
     return str(campo_final[0])
+
+def status(data_desligamento):
+    if data_desligamento == "":
+        status = "Ativo"
+    else:
+        status = "Inativo"
+
+    return status
