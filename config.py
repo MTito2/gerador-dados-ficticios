@@ -76,3 +76,5 @@ def beneficios():
 
     return salario, plano_saude, cartao_alimentacao
 
+def estado():
+    return fake.estado_sigla()
