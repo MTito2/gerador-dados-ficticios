@@ -85,3 +85,7 @@ def pontuacao_da_avaliacao():
     cumprimento_metas = random.randint(5, 10)
 
     return pontualidade, trabalho_em_equipe, cumprimento_metas
+
+def data_avalicao(data_inicio):
+    data_admissao = datetime.strptime(data_inicio, "%Y/%m/%d")
+    return fake.date_between_dates(date_start=data_admissao).strftime("%Y/%m/%d")
