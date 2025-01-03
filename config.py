@@ -1,5 +1,6 @@
 import gender_guesser.detector as gender
 from faker import Faker
+from datetime import datetime, date
 import random
 
 fake = Faker("pt-PT")
@@ -45,3 +46,6 @@ def definir_cargos():
     cargo = random.choices(cargos, weights=peso, k=1)
 
     return cargo
+
+def data_admissao():
+    return fake.date_between_dates(date_start=date(2012, 1, 1))
