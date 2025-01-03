@@ -68,3 +68,11 @@ def status(data_desligamento):
         status = "Inativo"
 
     return status
+
+def beneficios():
+    salario = round(random.uniform(1500, 5000), 2)
+    plano_saude = round(random.uniform(200, 500), 2)
+    cartao_alimentacao = round(random.uniform(500, 1200), 2)
+
+    return salario, plano_saude, cartao_alimentacao
+
