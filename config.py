@@ -49,3 +49,14 @@ def definir_cargos():
 
 def data_admissao():
     return fake.date_between_dates(date_start=date(2012, 1, 1))
+
+def data_desligamento(data_inicio):
+    data_admissao = datetime.strptime(data_inicio, "%Y/%m/%d")
+
+    campo = [""]
+    peso = [10, 1]
+    data = fake.date_between_dates(date_start=data_admissao).strftime("%Y/%m/%d")
+    campo.append(data)
+    campo_final = random.choices(campo, weights=peso, k=1)
+
+    return str(campo_final[0])
