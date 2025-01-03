@@ -4,7 +4,7 @@ Este repositório contém um sistema criado em Python para gerar dados fictício
 
 ## Visão Geral
 
-A ideia para este projeto surgiu da dificuldade em encontrar dados fictícios que atendessem às necessidades específicas do meu projeto. Após pesquisar diversas soluções online – incluindo sites pagos e com limitações de tamanho ou dados em outros idiomas – decidi desenvolver uma solução própria utilizando Python.
+A ideia para este projeto surgiu da dificuldade em encontrar dados fictícios que atendessem às nnecessidades específicas de um sistema que eu vou desenvolver. Após pesquisar diversas soluções online – incluindo sites pagos e com limitações de tamanho ou dados em outros idiomas – decidi desenvolver uma solução própria utilizando Python.
 
 O resultado é um pequeno sistema que:
 
