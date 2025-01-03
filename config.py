@@ -13,3 +13,10 @@ def nome_completo():
         
     return nome
 
+def descobrir_genero(nome_completo):
+    nome = nome_completo.split(" ")
+    nome = nome[0]
+
+    detector_genero = gender.Detector()
+    genero = "M" if detector_genero.get_gender(nome) in ("male", "mostly_male", "andy") else "F"
+    return genero
