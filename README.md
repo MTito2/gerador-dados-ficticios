@@ -1,4 +1,4 @@
-# Data Generator with Python
+# Gerador de dados fictícios com Python
 
 Este repositório contém um sistema criado em Python para gerar dados fictícios de maneira personalizada e eficiente, ideal para uso em projetos que necessitam de informações simuladas para testes ou protótipos.
 
