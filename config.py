@@ -78,3 +78,10 @@ def beneficios():
 
 def estado():
     return fake.estado_sigla()
+
+def pontuacao_da_avaliacao():
+    pontualidade = random.randint(5, 10)
+    trabalho_em_equipe = random.randint(5, 10)
+    cumprimento_metas = random.randint(5, 10)
+
+    return pontualidade, trabalho_em_equipe, cumprimento_metas
