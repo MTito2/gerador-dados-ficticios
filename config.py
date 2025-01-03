@@ -3,7 +3,7 @@ from faker import Faker
 from datetime import datetime, date
 import random
 
-fake = Faker("pt-PT")
+fake = Faker("pt-BR")
 
 def nome_completo():
     abreviacoes = ("Dr. ", "Sra. ", "Srta. ", "Dra. ", "Sr. ")
@@ -50,10 +50,10 @@ def definir_cargos():
     peso = [1, 40, 20, 2, 2, 10, 2, 2, 20, 2, 40, 35, 2, 15, 2, 10, 20, 30, 2, 2]
     cargo = random.choices(cargos, weights=peso, k=1)
 
-    return cargo
+    return cargo[0]
 
 def data_admissao():
-    return fake.date_between_dates(date_start=date(2012, 1, 1))
+    return fake.date_between_dates(date_start=date(2012, 1, 1)).strftime("%Y/%m/%d")
 
 def data_desligamento(data_inicio):
     data_admissao = datetime.strptime(data_inicio, "%Y/%m/%d")
