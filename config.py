@@ -82,7 +82,20 @@ def beneficios():
     return salario, plano_saude, cartao_alimentacao
 
 def estado():
-    return fake.estado_sigla()
+    estados = [
+    "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", 
+    "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão", 
+    "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", 
+    "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", 
+    "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", 
+    "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins"
+    ]
+
+    peso = [3, 7, 5, 3, 5, 20, 20, 2, 35, 40, 20, 45, 80, 20, 10, 50, 20, 20, 80, 40, 50, 10, 5, 60, 100, 20, 10]
+
+    estado = random.choices(estados, weights=peso, k=1)
+
+    return estado[0]
 
 def pontuacao_da_avaliacao():
     pontualidade = random.randint(5, 10)
